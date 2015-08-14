@@ -13,7 +13,7 @@ To run specs and mutant:
 ```
 bundle
 rspec spec/unit/book_spec.rb
-mutant -r book --use rspec '::Book#add_page'
+mutant -I lib -r book --use rspec 'Book#add_page'
 ```
 
 Enjoy!
